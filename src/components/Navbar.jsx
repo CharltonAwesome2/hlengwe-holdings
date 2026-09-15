@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import logo from '@assets/logo.png';
 
 const links = [
   { path: '/', label: 'Home' },
@@ -28,7 +29,7 @@ export default function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <Link to="/" className="navbar-brand">
-        <img src="/logo.png" alt="Hlengwe Holdings" />
+        <img src={logo} alt="Hlengwe Holdings" />
         <div className="navbar-brand-text">
           <span>HLENGWE</span>
           <span>Holdings</span>

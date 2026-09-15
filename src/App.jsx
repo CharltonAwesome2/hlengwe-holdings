@@ -1,19 +1,19 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import About from './pages/About';
-import Services from './pages/Services';
-import Team from './pages/Team';
-import Partners from './pages/Partners';
-import Gallery from './pages/Gallery';
-import Contact from './pages/Contact';
+import Navbar from '@components/Navbar.jsx';
+import Footer from '@components/Footer.jsx';
+import Home from '@pages/Home.jsx';
+import About from '@pages/About.jsx';
+import Services from '@pages/Services.jsx';
+import Team from '@pages/Team.jsx';
+import Partners from '@pages/Partners.jsx';
+import Gallery from '@pages/Gallery.jsx';
+import Contact from '@pages/Contact.jsx';
+import ScrollToTop from '@components/ScrollToTop.jsx';
 import './App.css';
-import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <Navbar />
       <main>
         <ScrollToTop />

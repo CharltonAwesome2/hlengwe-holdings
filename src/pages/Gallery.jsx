@@ -1,22 +1,14 @@
 import Section from '../components/Section';
+import mekgareng from '@assets/mekgareng.jpg';
+import smartCity from '@assets/smart-city.jpg';
+import agriculture from '@assets/agriculture.jpg';
+import map from '@assets/map.jpg';
 
-const galleryItems = [
-  {
-    src: '/mekgareng.jpg',
-    caption: 'Smart City Development – Hartebeespoort Dam: Mekgareng Oberon',
-  },
-  {
-    src: '/smart-city.jpg',
-    caption: 'Urban Mega City Development – Conceptual Render',
-  },
-  {
-    src: '/agriculture.jpg',
-    caption: 'Sustainable Agricultural Solutions',
-  },
-  {
-    src: '/map.jpg',
-    caption: 'Land Use & Development Planning',
-  },
+export const galleryItems = [
+  { src: mekgareng, caption: 'Smart City Development – Hartebeespoort Dam: Mekgareng Oberon' },
+  { src: smartCity, caption: 'Urban Mega City Development – Conceptual Render' },
+  { src: agriculture, caption: 'Sustainable Agricultural Solutions' },
+  { src: map, caption: 'Land Use & Development Planning' },
 ];
 
 export default function Gallery() {

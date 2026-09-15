@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
-import Section from '../components/Section';
-import ServiceCard from '../components/ServiceCard';
-import TeamCard from '../components/TeamCard';
-import PartnerGrid from '../components/PartnerGrid';
-import { services, values } from '../data/services';
-import { team } from '../data/team';
+import Section from '@components/Section';
+import ServiceCard from '@components/ServiceCard';
+import TeamCard from '@components/TeamCard';
+import PartnerGrid from '@components/PartnerGrid';
+import { services, values } from '@data/services';
+import { team } from '@data/team';
+import logo from '@assets/logo.png';
 
 export default function Home() {
   const featuredTeam = team.slice(0, 4);
@@ -14,7 +15,7 @@ export default function Home() {
       {/* Hero */}
       <section className="hero">
         <div className="hero-content">
-          <img src="/logo.png" alt="Hlengwe Holdings" className="hero-logo" />
+          <img src={logo} alt="Hlengwe Holdings" className="hero-logo" />
           <h1>
             Driving <span>Growth</span>, Fostering <span>Innovation</span>
           </h1>
